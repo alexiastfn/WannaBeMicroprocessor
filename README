@@ -1,0 +1,31 @@
+Task 1:
+
+- Citesc instructiunea (uinst) de la tastatura
+- Consideram numerotarea bitilor de la 0 la 31. Se extrage N din primii 3 biti prin shiftare. Extrag N din primii 3 biti din stanga, care vor fi pe pozitiile 31, 30, 29
+-In urmatorul for ma folosesc de sirul de caracter "+-*/" pentru a scoate instructiuniile 
+-Linia 29: 
+
+31 30 29 | 28 27 | 26 25 | ... | x, y | y-1 | y-2 | y-3 | y-4 |
+Ma folosesc de formula unei progresii aritmetice: 25 - 2*N 
+Pe aceasta pozitie va fi exact primul bit din cei 4 care reprezinta dimensiunea (dim)
+
+Task 2:
+
+-Calculez catul 'q' si restul 'r' operatiei ((N+1)*Dim)/16
+-Variabila 'm' imi va spune cate numere unsigned short voi citi de la tastatura
+- Pozitia "poz" este pozitia bitului celui mai din dreapta din "secventa" 
+(
+15|14|13|12   |11|10|9|8   |7|6|5|4   |3|2|1|0
+
+daca dim=4 atunci pozitiile de sfarsit ale bitilor din fiecare "secventa" sunt 0 4 8 12
+Prin secventa ma refer de exemplu la: 15|14|13|12 sau 11|10|9|8 sau |7|6|5|4 sau |3|2|1|0
+poz=poz-dim deoarece doresc sa obtin cate un operand per secventa
+)
+-In ultimul for ma folosesc de vectorii v[] si w[] pentru a obtine rezultatul (rez) final al output-ului. 
+-Vectorul v[] contine operatorii {+ - * /}, in timp ce vectorul w[] are rolul de a reda numerele/operanzii ce reies din numarul/numerele unisgned short ce se citesc de la tastatura. Acest ultim for are k-ul intre (0,N) deoarece N-ul va da numarul de operatii care se fac
+
+
+
+
+
+
